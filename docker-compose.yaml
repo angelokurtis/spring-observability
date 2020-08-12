@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  client:
+    image: observability-client-app
+    container_name: observability-client-app
+    ports:
+      - 8080:8081
+  server:
+    image: observability-server-app
+    container_name: observability-server-app
+    ports:
+      - 8082:8080
